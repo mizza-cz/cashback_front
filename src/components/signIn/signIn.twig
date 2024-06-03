@@ -1,0 +1,78 @@
+<div
+  class="modal fade"
+  id="signIn"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="myModal"
+  aria-hidden="true"
+>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button
+          type="button"
+          class="close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true"> {% include "@images/close.svg" %} </span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="modalForm">
+          <div class="modalForm__header">
+            <div class="modalForm__title">Registration</div>
+          </div>
+          <form
+            action="register.php"
+            method="post"
+            id="signup"
+            class="form__regist"
+          >
+            <div class="form__item">
+              <label for="fName">First Name</label>
+              <input
+                name="fName"
+                id="fName"
+                type="text"
+                name="lName"
+                id="lName"
+                required
+              />
+            </div>
+            <div class="form__item">
+              <label for="lName">Last Name</label>
+              <input type="text" name="lName" id="lName" required />
+            </div>
+
+            <div class="form__item">
+              <label for="email">email</label>
+              <input type="email" name="email" id="email" required />
+            </div>
+
+            <div class="form__item">
+              <label for="password">Password</label>
+              <input type="password" name="password" id="password" required />
+            </div>
+
+            <div class="form__item">
+              <label for="password_confirmation">Repeat password</label>
+              <input
+                type="password"
+                id="password_confirmation"
+                required
+                name="password_confirmation"
+              />
+            </div>
+            <input
+              type="submit"
+              value="Sign Up"
+              name="signUp"
+              class="btn btn-primary"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

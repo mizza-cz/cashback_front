@@ -1,0 +1,128 @@
+#fh5co-logo {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 300;
+  float: left;
+  margin-bottom: 0;
+  margin-top: 1.4em;
+  a {
+    color: var(--color-light);
+    position: relative;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: rgba($brand-white, 0.9) !important;
+      text-decoration: none;
+    }
+  }
+  span {
+    padding: 0;
+    margin: 0;
+    font-weight: 100;
+  }
+
+  @include media-breakpoint-down(md) {
+    width: 100%;
+    float: none;
+    margin-top: 0;
+  }
+}
+
+.header__menu a {
+  color: rgba($brand-white, 1);
+  padding: 2.4em 1.3em !important;
+  text-transform: uppercase;
+  border-left: none;
+  border-top: none;
+  border-top: none;
+  text-decoration-color: transparent;
+  zoom: 1;
+  font-weight: 700;
+  font-size: 13px;
+  border-bottom: none !important;
+  transition: all 0.3s;
+  &:hover,
+  &:focus,
+  &.active {
+    color: $brand-white !important;
+    text-decoration-color: inherit;
+  }
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  top: 0;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  &__menu {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.c-header__opener {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 0.0625rem solid transparent;
+  border-radius: 0.25rem;
+  transition: box-shadow 0.15s ease-in-out;
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 8px;
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--color-light);
+  cursor: pointer;
+  @include media-breakpoint-down(sm) {
+    padding: 0.25rem 0;
+    margin-left: auto;
+  }
+  span {
+    width: 24px;
+    height: 3px;
+    background: #fff;
+    transform: translateY(-1px);
+    display: block;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 24px;
+      height: 3px;
+      background: #fff;
+      left: 0;
+      right: 0;
+    }
+    &::before {
+      transform: translateY(-7px);
+    }
+    &::after {
+      transform: translateY(7px);
+    }
+  }
+  &:focus {
+    box-shadow: none;
+  }
+
+  @include media-breakpoint-only(xl) {
+    display: none;
+  }
+  @include media-breakpoint-only(xxl) {
+    display: none;
+  }
+}
+.is-nav-open .header__bottom-row {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s;
+}

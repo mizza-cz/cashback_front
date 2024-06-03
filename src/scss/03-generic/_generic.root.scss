@@ -1,0 +1,42 @@
+:root {
+  --color-light: #fff;
+  --color-dark: #000;
+}
+
+// $font-secondary: 'Roboto Slab', Arial, sans-serif;
+// Overrides
+$grid-gutter-width: 40px !default;
+$border-radius-base: 4px !default;
+$padding-base-vertical: 14px !default;
+
+$brand-primary: #c8141e !default;
+$brand-secondary: #3c4146 !default;
+$brand-tertiary: #2d4059 !default;
+
+$brand-white: #fff;
+$brand-black: #000;
+$brand-lighter: #848484;
+$brand-darker: #212121;
+$brand-selection-color: $brand-primary;
+$brand-body-color: #fcfcfc;
+$brand-body-bg: #fff;
+$brand-dark: #222831;
+$font-primary: 'Open Sans', Arial, serif;
+
+$input-border-focus: $brand-primary !default;
+$form-group-margin-bottom: 30px !default;
+
+::-webkit-selection {
+  color: $brand-body-color;
+  background: $brand-selection-color;
+}
+
+::-moz-selection {
+  color: $brand-body-color;
+  background: $brand-selection-color;
+}
+
+::selection {
+  color: $brand-body-color;
+  background: $brand-selection-color;
+}
